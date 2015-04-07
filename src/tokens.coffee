@@ -1,20 +1,20 @@
 {assign} = require "./helpers"
-ESCAPE_CHARACTER = 0
-BEGIN_GROUP =      1
-END_GROUP =        2
-MATH_SHIFT =       3
-ALIGNMENT_TAB =    4
-EOL =              5
-PARAMETER =        6
-SUPERSCRIPT =      7
-SUBSCRIPT =        8
-IGNORE =           9
-SPACE =            10
-LETTER =           11
-OTHER =            12
-ACTIVE =           13
-COMMENT =          14
-INVALID =          15
+ESCAPE_CHARACTER = 'escape_character'
+BEGIN_GROUP =      'begin_group'
+END_GROUP =        'end_group'
+MATH_SHIFT =       'math_shift'
+ALIGNMENT_TAB =    'alignment_tab'
+EOL =              'eol'
+PARAMETER =        'parameter'
+SUPERSCRIPT =      'superscript'
+SUBSCRIPT =        'subscript'
+IGNORE =           'ignore'
+SPACE =            'space'
+LETTER =           'letter'
+OTHER =            'other'
+ACTIVE =           'active'
+COMMENT =          'comment'
+INVALID =          'invalid'
 module.exports = tokens = new Scope()
 tokens.$categories = {
 	ESCAPE_CHARACTER
